@@ -1,0 +1,19 @@
+{
+  "name": "The dehuntinator",
+  "description": "This extension removes the banner of the event the hunt in roblox!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "The dehuntinator",
+    "default_icon": "icons/doofen.jpg"
+  },
+  "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+}
